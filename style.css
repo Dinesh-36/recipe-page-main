@@ -1,0 +1,190 @@
+:root {
+    --primary-Nutmeg: hsl(14, 45%, 36%);
+    --primary-DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --young-serif: "Young Serif", serif;
+    --outfit: "Outfit",
+        sans-serif;
+}
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--outfit);
+    color: var(--WengeBrown);
+}
+
+/*
+5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.content>* {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+
+.title,
+.prep-title,
+.sub__title {
+    padding: 1rem 0;
+    line-height: 1;
+}
+
+.title {
+    font-family: var(--young-serif);
+    color: var(--DarkCharcoal);
+    font-weight: var(--font-weight-400);
+}
+
+.prep-title {
+    color: var(--primary-DarkRaspberry);
+    font-family: var(--outfit);
+    font-weight: var(--font-weight-600);
+
+}
+
+.sub__title {
+    color: var(--primary-Nutmeg);
+    font-family: var(--young-serif);
+    font-weight: var(--font-weight-400);
+}
+
+.prep-time {
+    background-color: var(--RoseWhite);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+li::marker {
+    color: var(--primary-Nutmeg);
+}
+
+.prep-time__list::marker {
+    color: var(--primary-DarkRaspberry);
+}
+
+.instructions__titles,
+.prep-time__title {
+    font-weight: var(--font-weight-600);
+    font-family: var(--outfit);
+    font-size: 1.2rem;
+    color: var(--WengeBrown);
+}
+
+.nutrition__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 10vw;
+    text-align: left;
+}
+
+td:nth-child(2) {
+    color: var(--primary-Nutmeg);
+    font-weight: var(--font-weight-700);
+}
+
+@media(min-width:650px) {
+
+    body {
+        background-color: var(--Eggshell);
+
+    }
+
+    .parent {
+        max-width: 500px;
+        background-color: #fff;
+        margin: 10vh auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .child {
+        width: 90%;
+        margin: 4vh auto;
+    }
+
+    .banner {
+        border-radius: 5px;
+    }
+
+    .nutrition__table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    td {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+}
