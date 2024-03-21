@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://github.com/Dinesh-36/recipe-page-main)
+- Live Site URL: [Add live site URL here](https://famous-malasada-0845b3.netlify.app/)
 
 
 ### Built with
